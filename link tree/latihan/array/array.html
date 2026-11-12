@@ -1,0 +1,40 @@
+<script>
+//Cara ke-1
+var siswa=new Array();
+siswa[0] = "Andi";
+siswa[1] = "Joko";
+siswa[2] = "Deden";
+document.write("Data Siswa Pertama: " + siswa[0] + "<br>");
+document.write("Data Siswa Kedua: " + siswa[1] + "<br>");
+document.write("Data Siswa Ketiga: " + siswa[2] + "<br>");
+
+//Cara ke-2
+var nama;
+document.write("Masukan Nama 4 kali<br><br>");
+x=1;
+while (x<=4)
+  {
+    nama=prompt("Masukan Nama Siswa ke-"+x);
+    siswa[x]=nama;
+    x++;
+  }
+
+x=1
+while(x<=4)
+  {
+    document.write("Nama siswa ke "+x+"="+siswa[x]+"<br>");
+    x++;
+  }
+
+var siswa=["Andi", "Joko", "Deden"];
+document.write("Data Siswa Pertama: " + siswa[0] + "<br>");
+document.write("Data Siswa Kedua: " + siswa[1] + "<br>");
+document.write("Data Siswa Ketiga: " + siswa[2] + "<br>");
+
+</script>
+
+<html>
+    <body>
+        <a href="../../listlatihan.html">back</a>
+    </body>
+</html>

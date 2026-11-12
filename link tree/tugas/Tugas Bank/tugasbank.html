@@ -1,0 +1,276 @@
+<html>
+    <head>
+        <title>Formulir Aplikasi Rekening</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                min-width: 1250px;
+            }
+
+            input[type="text"],
+            input[type="number"],
+            input[type="date"] {    
+                box-sizing: border-box;
+            }
+
+            html {
+                overflow-x: auto;
+            }
+        </style>
+    </head>
+    <body style="font-family: Arial, Helvetica, sans-serif; margin: 20px;">
+        <!--JUDUL FORMULIR-->
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr width="0">
+                    <td valign="bottom" style="font-size: 26px;"><b>Formulir Aplikasi Rekening<br>Perorangan (AR-01)</b></td>
+                    <td valign="bottom"><img src="logobank.jpg" alt="logo bri" align="right" width="250" height="100"></td>
+                </tr>
+            </table>
+        
+        <!--CIF-->
+            <table border="0" cellspacing="0" cellpadding="0" style="margin-top: 10px;">
+                <tr>
+                    <td>
+                        <i style="font-size: 14px;">Diisi oleh Bank</i><br>
+                        <table cellspacing="0" cellpadding="0" style="border-collapse: collapse; border: 2px solid black;">
+                            <tr>
+                                <td style="background-color: black; color: white; font-size: 20px; padding: 2px 10px;"><b>CIF</b></td>
+                                <td>
+                                    <table border="1" cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
+                                        <tr>
+                                            <td><input type="text" maxlength="1" style="width: 28px; height: 32px; text-align: center; font-size: 18px; border: none; font-weight: bold;"></td>
+                                            <td><input type="text" maxlength="1" style="width: 28px; height: 32px; text-align: center; font-size: 18px; border: none; font-weight: bold;"></td>
+                                            <td><input type="text" maxlength="1" style="width: 28px; height: 32px; text-align: center; font-size: 18px; border: none; font-weight: bold;"></td>
+                                            <td><input type="text" maxlength="1" style="width: 28px; height: 32px; text-align: center; font-size: 18px; border: none; font-weight: bold;"></td>
+                                            <td><input type="text" maxlength="1" style="width: 28px; height: 32px; text-align: center; font-size: 18px; border: none; font-weight: bold;"></td>
+                                            <td><input type="text" maxlength="1" style="width: 28px; height: 32px; text-align: center; font-size: 18px; border: none; font-weight: bold;"></td>
+                                            <td><input type="text" maxlength="1" style="width: 28px; height: 32px; text-align: center; font-size: 18px; border: none; font-weight: bold;"></td>
+                                            <td><input type="text" maxlength="1" style="width: 28px; height: 32px; text-align: center; font-size: 18px; border: none; font-weight: bold;"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <table border=0 style="margin-top: 10px;" width="100%" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td width="4%" rowspan="10"></td>
+                    <td colspan="2"><b>Mohon diisi oleh nasabah dengan huruf cetak pada kolom berwarna putih dan klik pada lingkaran sesuai pilihan</b></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Nama Lengkap : <input type="text" size="106" style="border: none; border: 2px solid black;"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Nama sesuai kartu ID : Diinput langsung oleh Petugas ke sistem</td>
+                </tr>
+            </table>
+            <table border=0 style="margin-top: 2px;" width="100%" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td rowspan="2" width="2.5%"></td>
+                    <td colspan="2" style="background-color: black; color: white; border-radius: 5px; font-weight: bold; padding: 1px 10px;">1. DATA NASABAH</td>
+                </tr>
+                <tr>
+                    <td width="65%" style="background-color: black; color: white; border-radius: 5px; font-weight: bold; padding: 1px 10px">&nbsp;&nbsp;&nbsp; DATA PRIBADI</td>
+                    <td width="35%" align="center">
+                        <input type="radio" name="data"">BARU
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="radio" name="data">PENGKINIAN</td>
+                </tr>
+            </table>
+            <table border=0 style="margin-top: 4px;" width="100%" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td width="4%" rowspan="20"></td>
+                    <td width="20%">Jenis Kelamin </td>
+                    <td width="20%" align="center"><input type="radio" name="jk">Pria</td>
+                    <td width="20%" align="center"><input type="radio" name="jk">Wanita</td>
+                </tr>
+                <tr>
+                    <td>Kewarganegaraan </td>
+                    <td align="center"><input type="radio" name="wn">WNI</td>
+                    <td align="center"><input type="radio" name="wn">WNA</td>
+                    <td width="31%">Negara : <input type="text" name="wn" size="45" style="border: none; border: 2px solid black;"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Tempat Lahir
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        : <input type="text" name="tempL" size="25" style="border: none; border: 2px solid black;"></td>
+                    <td align="left">Tanggal Lahir &nbsp; :  <input type="date" name="tangL" style="border: none; border: 2px solid black;"></td>
+                </tr>
+                <tr>
+                    <td colspan="4">Nama gadis Ibu kandung
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        : <input type="text" name="ik" size="62" style="border: none; border: 2px solid black;"></td>
+                </tr>
+                <tr>
+                    <td>Jenis Identitas </td>
+                    <td align="center"><input type="radio" name="jenIden"> KTP</td>
+                    <td align="center"><input type="radio" name="jenIden"> SIM</td>
+                    <td align="center"><input type="radio" name="jenIden"> Passport dilampirkan KITAP/KITAS/KIMS</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Nomor Identitas
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        :
+                        <input type="tel" name="noIden" pattern="5" style="border: none; border: 2px solid black;"></td>
+                    <td colspan="2">Tanggal Terbit
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        :
+                        &nbsp;&nbsp;
+                        <input type="number" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" maxlength="1" style="border: none; border: 2px solid black; width: 25px; height: 25px; text-align: center; font-size: 15px;"><input type="text" maxlength="1" style="border: none; border: 2px solid black; width: 25px; height: 25px; text-align: center; font-size: 15px;">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" maxlength="1" style="border: none; border: 2px solid black; width: 25px; height: 25px; text-align: center; font-size: 15px;"><input type="text" maxlength="1" style="border: none; border: 2px solid black; width: 25px; height: 25px; text-align: center; font-size: 15px;"><input type="text" maxlength="1" style="border: none; border: 2px solid black; width: 25px; height: 25px; text-align: center; font-size: 15px;">
+                    </td>
+                <tr>
+                    <td colspan="2"></td>
+                    <td colspan="2">
+                        Tanggal Kadaluarsa : 
+                        &nbsp;&nbsp;
+                        <input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" maxlength="1" style="border: none; border: 2px solid black; width: 25px; height: 25px; text-align: center; font-size: 15px;"><input type="text" maxlength="1" style="border: none; border: 2px solid black; width: 25px; height: 25px; text-align: center; font-size: 15px;">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" maxlength="1" style="border: none; border: 2px solid black; width: 25px; height: 25px; text-align: center; font-size: 15px;"><input type="text" maxlength="1" style="border: none; border: 2px solid black; width: 25px; height: 25px; text-align: center; font-size: 15px;"><input type="text" maxlength="1" style="border: none; border: 2px solid black; width: 25px; height: 25px; text-align: center; font-size: 15px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pendidikan Terakhir</td>
+                    <td colspan="3">
+                        <input type="radio" name="pendidikan">
+                        SD
+                        <input type="radio" name="pendidikan">
+                        SLTP
+                        <input type="radio" name="pendidikan">
+                        SLTA
+                        <input type="radio" name="pendidikan">
+                        S1
+                        <input type="radio" name="pendidikan">
+                        S2
+                        <input type="radio" name="pendidikan">
+                        S3
+                        <input type="radio" name="pendidikan">
+                        Lainnya
+                    </td>
+                </tr>
+                <tr>
+                    <td>Agama</td>
+                    <td colspan="3">
+                        <input type="radio" name="agama">
+                        Islam
+                        <input type="radio" name="agama">
+                        Katolik
+                        <input type="radio" name="agama">
+                        Protestan
+                        <input type="radio" name="agama">
+                        Buddha
+                        <input type="radio" name="agama">
+                        Hindu
+                        <input type="radio" name="agama">
+                        Lainnya
+                    </td>
+                </tr>
+                <tr>
+                    <td>Status Perkawinan</td>
+                    <td colspan="2">
+                        <input type="radio" name="status">
+                        Lajang
+                        <input type="radio" name="status">
+                        Kawin
+                        <input type="radio" name="status">
+                        Janda/Duda
+                    </td>
+                    <td>
+                        Hobi Nasabah : <input type="text" size="38" style="border: none; border: 2px solid black;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Kode Pos sesuai alamat pada ID
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        :
+                    </td>
+                    <td colspan="3">
+                        <input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;">
+                    </td>
+                </tr>
+            </table>
+            <table border=0 style="margin-top: 4px;" width="100%" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td width="4%" rowspan="3"></td>
+                    <td style="font-weight: bold;" colspan="4">
+                        Alamat domisili (diisi hanya apabila berbeda dengan Alamat pada Identitas) :
+                        <input type="text" size="109" style="border: none; border: 2px solid black;">
+                    </td>
+                </tr>
+                <tr>
+                    <td width="175"></td>
+                    <td colspan="3"><input type="text" size="154" style="border: none; border: 2px solid black;"></td>
+                </tr>
+            </table>
+            <table border=0 style="margin-top: 4px;" width="100%" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td width="4%" rowspan="3"></td>
+                    <td>RT/RW</td>
+                    <td>:</td>
+                    <td colspan="2" width="9%"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"></td>
+                    <td width="23%"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"></td>
+                    </td>
+                    <td colspan="3">
+                        Kelurahan/Desa : <input type="text" size="43" style="border: none; border: 2px solid black;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Kecamatan</td>
+                    <td>:</td>
+                    <td colspan="3"><input type="text" size="50" style="border: none; border: 2px solid black;"></td>
+                    <td width="115">Kota</td>
+                    <td align="right">:</td>
+                    <td><input type="text" size="40" style="border: none; border: 2px solid black;"></td>
+                </tr>
+                <tr>
+                    <td>Propinsi</td>
+                    <td>:</td>
+                    <td colspan="3"><input type="text" size="50" style="border: none; border: 2px solid black;"></td>
+                    <td width="115">Kode Pos</td>
+                    <td align="right">:</td>
+                    <td><input type="text" size="40" style="border: none; border: 2px solid black;"></td>
+                </tr>
+            </table>
+
+            <table border=0 style="margin-top: 4px;" width="100%" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td width="4%" rowspan="2"></td>
+                    <td  width="11%" style="font-weight: bold;">Informasi Kontak :</td>
+                    <td width="110">Telepon</td>
+                    <td width="25">:</td>
+                    <td width="125"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"></td>
+                    <td width="300"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"></td>
+                    <td width="100">Handphone</td>
+                    <td width="25">:</td>
+                    <td><input type="text" size="48" style="border: none; border: 2px solid black;"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Faksimili</td>
+                    <td width="25">:</td>
+                    <td width="125"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"></td>
+                    <td width="300"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"><input type="text" maxlength="1" style="width: 25px; height: 25px; text-align: center; font-size: 15px; border: none; border: 2px solid black;"></td>
+                    <td width="100">Email</td>
+                    <td width="25">:</td>
+                    <td><input type="text" size="48" style="border: none; border: 2px solid black;"></td>
+                </tr>
+            </table>
+        <table border=0 style="margin-top: 4px;" width="100%" cellspacing="0" cellpadding="0">
+            <tr>
+                <td rowspan="2" width="4%"></td>
+                <td width="50"><input type="submit" style="border: none; border: 2px solid black;"></td>
+                <td><input type="reset" style="border: none; border: 2px solid black;"></td>
+            </tr>
+        </table>
+        <a href="../../listtugas.html">back</a>
+    </body>
+</html>

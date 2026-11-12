@@ -1,0 +1,45 @@
+<body>
+    <form action="prosess.php" method="get">
+        
+        <!--Isi Formulir-->
+        
+        <fieldset>
+            <legend>Pendaftaran Online</legend>
+            
+            Nama <input type="text" name="nama" size="30" maxlength="35">
+            <br>
+            Password <input type="password" name="pass" placeholder="masukan password">
+            <br>
+            Email <input type="email" name="enamil" placeholder="example@gmail.com">
+            <br>
+            Jenis Kelamin:
+            <input type="radio" name="jns" value="laki">Laki-laki
+            <input type="radio" name="jns" value="perempuan">Perempuan
+            
+            <br>
+            Agama:
+            <select name="agama">
+                <option value="islam">Islam</option>
+                <option value="kristen">Kristen</option>
+                <option value="hindu">Hindu</option>
+                <option value="buddha">Buddha</option>
+            </select>
+            
+            <br>
+            Biografi: <textarea name="biografi" cols="25" rows="3"></textarea>
+            <br>
+            Alamat Web: <input type="url" name="name" placeholder="URL Web">
+            <br>
+            Tanggal Lahir: <input type="date" name="tl">
+            <br>
+            Hobby:
+            -Main <input type="checkbox" name="main" value="main">
+            -Baca <input type="checkbox" name="baca" value="baca">
+            <br>
+            <input type="submit" name="submit" value="simpan">
+            <input type="reset" name="reset" value="hapus">
+        </fieldset>
+    </form>
+
+    <a href="../../listlatihan.html">back</a>
+</body>
