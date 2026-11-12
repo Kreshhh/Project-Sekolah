@@ -38,7 +38,6 @@
                 margin: auto;
                 border: 2px solid white;
                 border-radius: 50%;
-
                 background-image: url(gwejh.jfif);
                 background-size: cover;
                 background-position: center;
@@ -61,44 +60,40 @@
                 width: 500px;
                 height: 75px;
                 box-sizing: border-box;
-
                 border: 2px solid white;
                 border-radius: 10px;
                 background-color: #DC1F1F;
-
                 flex-direction: column;
                 text-align: center;
                 font-size: 16px;
                 font-weight: bold;
                 color: white;
-
+                text-decoration: none;
                 justify-content: center;
                 align-items: center;
                 transition: 0.3s;
             }
 
-            /* Warna link tetap sama sebelum dan sesudah dikunjungi */
+            /* Hilangkan garis bawah dan samakan warna semua status link */
             .link:link,
-            .link:visited {
+            .link:visited,
+            .link:hover,
+            .link:active {
                 color: white;
+                text-decoration: none;
             }
 
-            /* Hover hanya untuk perangkat yang memakai mouse */
+            /* Efek hover hanya untuk perangkat yang memakai mouse */
             @media (hover: hover) and (pointer: fine) {
                 .link:hover {
                     background-color: #8F1717;
                     box-shadow: 0 0 22px rgba(0, 0, 0, 0.5);
                     transform: scale(1.03);
-                    color: white;
                 }
             }
 
-            /* Tampilan khusus layar HP */
+            /* Penyesuaian khusus layar HP */
             @media screen and (max-width: 600px) {
-                body {
-                    -webkit-text-stroke: 1px black;
-                }
-
                 .header {
                     height: auto;
                 }
