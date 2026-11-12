@@ -74,16 +74,6 @@
                 transition: 0.3s;
             }
 
-            /* Hilangkan garis bawah dan samakan warna semua status link */
-            .link:link,
-            .link:visited,
-            .link:hover,
-            .link:active {
-                color: white;
-                text-decoration: none;
-            }
-
-            /* Efek hover hanya untuk perangkat yang memakai mouse */
             @media (hover: hover) and (pointer: fine) {
                 .link:hover {
                     background-color: #8F1717;
@@ -92,7 +82,6 @@
                 }
             }
 
-            /* Penyesuaian khusus layar HP */
             @media screen and (max-width: 600px) {
                 .header {
                     height: auto;
@@ -130,8 +119,8 @@
             .link:visited,
             .link:hover,
             .link:active {
-            color: white !important;
-            -webkit-text-fill-color: white;
-            -webkit-text-stroke: 8px black;
-            text-decoration: none;
+                color: white !important;
+                -webkit-text-fill-color: white;
+                -webkit-text-stroke: 8px black;
+                text-decoration: none;
             }
