@@ -124,3 +124,14 @@
                     min-height: 110vh;
                 }
             }
+
+            .link,
+            .link:link,
+            .link:visited,
+            .link:hover,
+            .link:active {
+            color: white !important;
+            -webkit-text-fill-color: white;
+            -webkit-text-stroke: 8px black;
+            text-decoration: none;
+            }
